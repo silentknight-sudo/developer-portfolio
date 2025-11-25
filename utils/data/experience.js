@@ -1,20 +1,16 @@
 export const experiences = [
   {
     id: 1,
-    title: 'Software Engineer I',
-    company: "Teton Private Ltd.",
-    duration: "(Jan 2022 - Present)"
+    title: "Freelance Developer",
+    company: "Remote",
+    duration: "2023 – Present",
+    description: "Core Areas: App Development, UI/UX Design, API Integration, Generative AI, Cloud. Delivered 15+ full-stack web and mobile projects for clients in education, design, and AI sectors. Developed Flutter-based mobile applications integrating REST APIs and Firebase services. Collaborated on product design, conducting UI/UX improvements aligned with brand aesthetics. Deployed production-ready apps using CI/CD pipelines and ensured performance optimization."
   },
   {
     id: 2,
-    title: "FullStack Developer",
-    company: "Fiverr (freelance)",
-    duration: "(Jun 2021 - Jan 2022)"
-  },
-  {
-    id: 3,
     title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2018 - Present)"
+    company: "",
+    duration: "Present ",
+    description: ""
   }
-]
+];

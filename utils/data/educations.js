@@ -1,20 +1,20 @@
 export const educations = [
   {
     id: 1,
-    title: "Bachelor Degree",
-    duration: "2020 - Present",
-    institution: "National University of Bangladesh",
-  },
-  {
-    id: 2,
-    title: "Higher Secondary Certificate",
-    duration: "2018 - 2020",
-    institution: "Noakhali Islamia Kamil Madrasah",
-  },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2018",
-    institution: "Baitus Saif Islamia Madrasah",
+    title: "B.Tech in Computer Science and Engineering (AIML)",
+    institution: "GL Bajaj Group of Institutions, Mathura",
+    duration: "2021 – 2025",
+    achievements: [
+      "Finalist – Solana HackDay (IIIT Delhi)",
+      "Top Rank – iNeuron Hackathon (NIU)",
+      "Member – Google Developer Student Club (GDSC)",
+      "Campus Winner – Accenture Digital Innovators Challenge (2024)"
+    ],
+    certifications: [
+      "Google Cloud: Vertex AI, Generative AI, and Responsible AI",
+      "Flutter Development Bootcamp – AppBrewery",
+      "UI/UX Design Essentials – Coursera (Google)",
+      "HackerRank: Python (Basic), Problem Solving (Basic)"
+    ]
   }
-]
+];
