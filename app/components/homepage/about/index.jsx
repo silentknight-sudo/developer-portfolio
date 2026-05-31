@@ -2,39 +2,42 @@
 
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
-import profile from "../../../profile.png";
-
 
 function AboutSection() {
   return (
-    <div id="about" className="my-12 lg:my-16 relative">
-      <div className="hidden lg:flex flex-col items-center absolute top-16 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          ABOUT ME
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
+    <section id="about" className="section-shell">
+      <div className="section-heading-wrap">
+        <span className="section-kicker">About</span>
+        <h2 className="section-title">A builder who likes codebases with personality.</h2>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="order-2 lg:order-2">
-          <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-            Who I am?
-          </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}
-          </p>
-        </div>
-        <div className="flex justify-center order-1 lg:order-1">
+
+      <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="profile-frame float-card">
           <Image
-            src={profile}
-            width={280}
-            height={280}
+            src={personalData.profile}
+            width={360}
+            height={360}
             alt="Vivek Shukla"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+            className="h-auto w-full rounded-[1.5rem] object-cover"
           />
         </div>
+
+        <div className="glass-panel rounded-[1.75rem] p-6 md:p-8">
+          <p className="text-base leading-8 text-white/75 md:text-lg">
+            {personalData.description}
+          </p>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {personalData.highlights.map((item) => (
+              <div key={item} className="mini-panel">
+                <span className="text-sm leading-7 text-white/70">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default AboutSection;

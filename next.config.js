@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     domains: ['shorturl.at'],
   },
+  outputFileTracingRoot: __dirname,
 };
 
 module.exports = nextConfig;

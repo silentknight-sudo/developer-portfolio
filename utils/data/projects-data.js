@@ -1,164 +1,231 @@
 export const projectsData = [
   {
-    name: 'AI Study Companion',
-    tools: ['Python', 'OpenAI API', 'Streamlit', 'HTML/CSS/JS'],
-    myRole: 'Led end-to-end development\nIntegrated LLM for personalized study recommendations\nBuilt UI and workflow logic',
-    description: 'AI-powered study assistant that generates study plans, notes, flashcards, and summaries.'
+    name: "Arogya CRM",
+    tools: ["React.js", "Firebase", "Supabase", "Node.js", "Tailwind CSS"],
+    role: "Built the CRM core, dashboards, auth flow, and operational UX for sales and team workflows.",
+    description:
+      "Business automation platform for lead management, sales tracking, employee workflows, and internal operations.",
+    code: "https://github.com/silentknight-sudo/arogyacrm",
+    featured: true,
   },
   {
-    name: 'BakeDeals',
-    tools: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS', 'Bootstrap'],
-    myRole: 'Developed full frontend\nImplemented product catalog and category filters\nIntegrated backend with MySQL',
-    description: 'Online bakery store with product categories and shopping features.'
+    name: "ArogyaBio Main Ecommerce Website",
+    tools: ["React.js", "Next.js", "Firebase", "Tailwind CSS", "Vercel"],
+    role: "Owned the storefront UX, landing flows, product showcase pages, and performance-focused frontend delivery.",
+    description:
+      "Production business website focused on Ayurvedic product sales, digital branding, and conversion-heavy landing pages.",
+    code: "https://github.com/silentknight-sudo/arogyabio-starter",
+    featured: true,
   },
   {
-    name: 'BakeDeals (Solana Hackday Version)',
-    tools: ['Solana Web3.js', 'Anchor', 'React.js', 'Tailwind', 'Rust'],
-    myRole: 'Integrated Solana wallet and Web3 transactions\nBuilt React frontend\nDeployed smart contract components',
-    description: 'Web3 bakery ecommerce app built for Solana Hackday.'
+    name: "Studio",
+    tools: ["React.js", "Firebase", "Tailwind CSS"],
+    role: "Built responsive frontend systems and business-facing internal workflow modules.",
+    description:
+      "EMS and digital business platform designed for internal operations, service workflows, and employee management.",
+    code: "https://github.com/silentknight-sudo/studio",
+    featured: true,
   },
   {
-    name: 'BioCoalTech',
-    tools: ['React.js', 'Next.js', 'Tailwind', 'Node.js'],
-    myRole: 'Created full UI and landing pages\nManaged content design\nIntegrated backend APIs',
-    description: 'A platform showcasing the conversion of agricultural waste into biocoal.'
+    name: "Emotion Study Companion",
+    tools: ["Flutter", "Firebase", "OpenCV", "ML APIs"],
+    role: "Developed the app concept, gamified UI, and emotion-aware recommendation workflow.",
+    description:
+      "AI-driven study companion that reads voice and facial emotion cues to suggest study or relaxation actions.",
+    code: "https://github.com/silentknight-sudo/emotion-study-companion",
+    featured: true,
   },
   {
-    name: 'BioCoalTech — Admin Panel',
-    tools: ['React.js', 'Recharts', 'Node.js', 'MongoDB'],
-    myRole: 'Designed and built dashboard UI\nIntegrated analytics and data visualizations\nManaged CRUD operations',
-    description: 'Admin dashboard for managing operations, farmers, and analytics.'
+    name: "EDIFYLEARN",
+    tools: ["React.js", "Firebase", "OpenAI API"],
+    role: "Engineered the AI workflow, authentication, dashboards, and dynamic rendering logic.",
+    description:
+      "Generative learning web app that turns topics into interactive mindmaps, summaries, and guided learning flows.",
+    code: "https://github.com/silentknight-sudo/EDIFYLEARN",
+    featured: true,
   },
   {
-    name: 'blackboxai-1745575104850',
-    tools: ['HTML', 'CSS'],
-    myRole: 'Reviewed and optimized AI-generated code',
-    description: 'Auto-generated project using Blackbox AI.'
+    name: "Diagnose.AI",
+    tools: ["React.js", "Node.js", "ML Models", "Vercel"],
+    role: "Built the application flow, model integration pipeline, and UX for non-technical users.",
+    description:
+      "AI-assisted health screening web app with real-time inputs, predictive symptom analysis, and rapid deployment.",
+    code: "",
+    featured: true,
   },
   {
-    name: 'CodePedler',
-    tools: ['React.js', 'Node.js', 'MongoDB'],
-    myRole: 'Developed key UI screens\nImplemented authentication features\nDesigned user flow',
-    description: 'Platform for coding practice and learning.'
+    name: "AI Study Companion",
+    tools: ["Python", "OpenAI API", "Streamlit"],
+    role: "Built study workflows, personalized recommendation logic, and the app interface.",
+    description: "AI productivity assistant for plans, summaries, flashcards, and study support.",
+    code: "https://github.com/silentknight-sudo/ai_study_companion",
   },
   {
-    name: 'Diagnose.ai',
-    tools: ['Python', 'ML Models', 'Streamlit'],
-    myRole: 'Built ML pipeline\nDesigned UI\nIntegrated prediction logic',
-    description: 'Medical symptom diagnostic tool using AI.'
+    name: "JARVIS Assistant",
+    tools: ["Python", "Speech Recognition", "OpenAI API"],
+    role: "Implemented voice input, AI response flow, and interactive assistant behavior.",
+    description: "Voice-enabled desktop assistant built around speech and AI interactions.",
+    code: "https://github.com/silentknight-sudo/JARVIS-ASSISTANT",
   },
   {
-    name: 'Drive-Sure',
-    tools: ['React.js', 'Node.js', 'Google Maps API'],
-    myRole: 'Integrated Maps API\nDesigned frontend UI\nCreated data processing logic',
-    description: 'Driving safety analysis platform.'
+    name: "BakeDeals",
+    tools: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    role: "Built storefront UI, product views, and the ecommerce workflow.",
+    description: "Online bakery shopping experience with product browsing and order-oriented flows.",
+    code: "https://github.com/silentknight-sudo/bakedeals",
   },
   {
-    name: 'Ecommerce Website',
-    tools: ['PHP/Node.js', 'MySQL', 'HTML/CSS/JS'],
-    myRole: 'Built product and cart modules\nDesigned UI components\nSet up backend routes',
-    description: 'Full-stack ecommerce platform.'
+    name: "BakeDeals Solana Hackday",
+    tools: ["React.js", "Tailwind", "Solana", "Rust"],
+    role: "Worked on the Web3-facing frontend and wallet-connected ecommerce interactions.",
+    description: "Hackathon version of BakeDeals with blockchain-backed payment and wallet mechanics.",
+    code: "https://github.com/silentknight-sudo/bakedeals_solanahackdayprojectbyteamabhiyanta",
   },
   {
-    name: 'EDIFYLEARN (Mindmap Generator)',
-    tools: ['Python', 'OpenAI API', 'Mermaid.js', 'Streamlit'],
-    myRole: 'Constructed AI prompt pipeline\nBuilt mindmap rendering logic\nCreated entire UI interface',
-    description: 'AI tool that generates mindmaps from topics.'
+    name: "BioCoalTech",
+    tools: ["React.js", "Next.js", "Node.js"],
+    role: "Shaped landing pages, interface structure, and content-driven frontend presentation.",
+    description: "Product and awareness platform for agricultural waste to biocoal conversion.",
+    code: "https://github.com/silentknight-sudo/BioCoalTech",
   },
   {
-    name: 'Emotion Study Companion',
-    tools: ['Python', 'OpenCV', 'FER Models'],
-    myRole: 'Built emotion detection ML component\nIntegrated study assistant logic\nDeveloped frontend',
-    description: 'Emotion-aware study assistant.'
+    name: "BioCoalTech Admin",
+    tools: ["React.js", "Analytics UI", "MongoDB"],
+    role: "Built admin workflows, analytics views, and CRUD-heavy dashboard modules.",
+    description: "Operations dashboard for monitoring business activity, analytics, and admin tasks.",
+    code: "https://github.com/silentknight-sudo/biocoaltech--admin",
   },
   {
-    name: 'Forever Full Stack',
-    tools: ['React.js', 'Node.js', 'MongoDB'],
-    myRole: 'Created full project architecture\nBuilt reusable components',
-    description: 'Full-stack project boilerplate.'
+    name: "CodePedler",
+    tools: ["React.js", "Node.js", "MongoDB"],
+    role: "Built learning flows, authentication UI, and core product screens.",
+    description: "Coding practice and learning platform focused on structured skill growth.",
+    code: "https://github.com/silentknight-sudo/CodePedler",
   },
   {
-    name: 'Fraud Detection (ML + UI)',
-    tools: ['Python', 'sklearn', 'Streamlit'],
-    myRole: 'Built ML classification model\nDeveloped dashboard UI\nPerformed model evaluation',
-    description: 'Fraud detection ML model with UI.'
+    name: "OTES",
+    tools: ["Flutter", "Firebase"],
+    role: "Implemented emergency interactions and location-aware behavior.",
+    description: "One Touch Emergency Service app for fast SOS access and user safety actions.",
+    code: "https://github.com/silentknight-sudo/OTES",
   },
   {
-    name: 'Groq AI Experiments',
-    tools: ['Groq API', 'Python'],
-    myRole: 'Built API tests\nCompared performance benchmarks\nCreated sample applications',
-    description: 'Experimenting with Groq’s ultra-fast LLM APIs.'
+    name: "PPT Generation ChatGPT",
+    tools: ["Python", "python-pptx", "OpenAI API"],
+    role: "Built the generation workflow and prompt-based slide automation.",
+    description: "Tool for generating presentation decks directly from text prompts.",
+    code: "https://github.com/silentknight-sudo/ppt_generation_chatgpt",
   },
   {
-    name: 'JARVIS Assistant',
-    tools: ['Python', 'SpeechRecognition', 'OpenAI API'],
-    myRole: 'Built speech-to-text flow\nIntegrated AI responses\nAdded voice interaction',
-    description: 'Voice-enabled virtual assistant.'
+    name: "News Portal",
+    tools: ["Laravel", "MySQL", "Blade"],
+    role: "Built admin, categories, and backend management flows.",
+    description: "Content-focused news portal with publishing and management capabilities.",
+    code: "https://github.com/silentknight-sudo/newsportal",
   },
   {
-    name: 'My Personal Profile Website',
-    tools: ['HTML', 'CSS', 'JS'],
-    myRole: 'Designed UI\nCreated responsive layout\nManaged deployment',
-    description: 'Portfolio showing your projects and achievements.'
+    name: "Groq Experiments",
+    tools: ["Groq API", "Python"],
+    role: "Tested ultra-fast LLM integrations and benchmark-style prototypes.",
+    description: "Experimental repo exploring Groq-powered AI interactions and inference speed.",
+    code: "https://github.com/silentknight-sudo/groq",
   },
   {
-    name: 'Netflix Front Page Clone',
-    tools: ['HTML', 'CSS', 'JS'],
-    myRole: 'Designed full UI section\nImplemented animations',
-    description: 'Clone of Netflix home UI.'
+    name: "Quake Hunter",
+    tools: ["Python", "USGS API", "Plotly"],
+    role: "Connected live data, visualized results, and framed the information UX.",
+    description: "Live earthquake tracking and visualization project using external data APIs.",
+    code: "https://github.com/silentknight-sudo/quake-hunter",
   },
   {
-    name: 'News Portal (Laravel)',
-    tools: ['Laravel', 'MySQL', 'Blade'],
-    myRole: 'Implemented admin dashboard\nBuilt category system\nManaged backend logic',
-    description: 'News portal with categories and admin panel.'
+    name: "Quake Hunterman",
+    tools: ["JavaScript", "Maps UI"],
+    role: "Built the interface and map-focused exploration flow.",
+    description: "Frontend-heavy evolution of the earthquake visualization concept.",
+    code: "https://github.com/silentknight-sudo/Quake-Hunterman",
   },
   {
-    name: 'Notes App',
-    tools: ['React.js', 'LocalStorage/Firebase'],
-    myRole: 'Built entire CRUD flow\nDesigned UI\nAdded user interactions',
-    description: 'Simple notes CRUD application.'
+    name: "Fraud Detection ML UI",
+    tools: ["Python", "Scikit-learn", "Streamlit"],
+    role: "Built the prediction pipeline and surfaced results through a simple interface.",
+    description: "Fraud detection workflow with machine learning and a usable UI layer.",
+    code: "https://github.com/silentknight-sudo/fraud-detection-using-ml-with-ui",
   },
   {
-    name: 'OTES – One Touch Emergency Service',
-    tools: ['Flutter/React Native', 'Firebase'],
-    myRole: 'Implemented location tracking\nBuilt emergency button logic',
-    description: 'Emergency app for instant SOS service.'
+    name: "Netflix Frontpage",
+    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Focused on visual cloning, layout composition, and interaction polish.",
+    description: "Frontend recreation of the Netflix landing experience.",
+    code: "https://github.com/silentknight-sudo/netflixfrontpage",
   },
   {
-    name: 'PlayStreak',
-    tools: ['React.js', 'Firebase'],
-    myRole: 'Designed UX\nImplemented streak logic',
-    description: 'Tracks user activity streaks.'
+    name: "Notes App",
+    tools: ["React.js", "Local state"],
+    role: "Built basic CRUD interactions and interface flow.",
+    description: "Minimal notes management app for quick content capture.",
+    code: "https://github.com/silentknight-sudo/notes-app",
   },
   {
-    name: 'PPT Generation using ChatGPT',
-    tools: ['Python', 'python-pptx', 'OpenAI API'],
-    myRole: 'Built PPT generation engine\nDesigned prompt templates\nImplemented UI',
-    description: 'Automatically generates PPT slides from text using GPT.'
+    name: "Personal Profile Website",
+    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Designed layout and personal brand presentation.",
+    description: "Early personal site used to showcase projects and identity online.",
+    code: "https://github.com/silentknight-sudo/My-personal-profile",
   },
   {
-    name: 'Quake Hunter',
-    tools: ['Python', 'USGS API', 'Plotly'],
-    myRole: 'Integrated earthquake API\nBuilt visualization charts',
-    description: 'Displays real-time earthquake information.'
+    name: "Developer Portfolio",
+    tools: ["Next.js", "React.js", "Tailwind"],
+    role: "Customized the portfolio base into a branded, content-rich personal site.",
+    description: "Portfolio codebase that evolves with new work, experiments, and design refreshes.",
+    code: "https://github.com/silentknight-sudo/developer-portfolio",
   },
   {
-    name: 'Quake Hunterman',
-    tools: ['JavaScript', 'Maps API'],
-    myRole: 'Built map UI\nDesigned charts',
-    description: 'Earthquake visualization web tool (v2).'
+    name: "Real Estate Dashboard",
+    tools: ["React.js", "Dashboard UI"],
+    role: "Built dashboard styling and panel-level UI presentation.",
+    description: "Real estate oriented admin-style dashboard experience.",
+    code: "https://github.com/silentknight-sudo/real-estate-dashboard",
   },
   {
-    name: 'silentknight-sudo (Profile Repo)',
-    tools: ['Markdown'],
-    myRole: 'Wrote and designed profile presentation',
-    description: 'Your GitHub profile README.'
+    name: "Arogya Catalogue Upgrade",
+    tools: ["Next.js", "React.js", "Tailwind"],
+    role: "Worked on visual presentation and product-focused information layout.",
+    description: "Modernized catalogue-style experience for healthcare product discovery.",
+    code: "https://github.com/silentknight-sudo/v0-arogya-bio-catalogue-upgrade",
   },
   {
-    name: 'Time Range Merger',
-    tools: ['Python', 'JavaScript'],
-    myRole: 'Implemented interval merging logic\nWrote algorithm from scratch',
-    description: 'Merges overlapping time intervals using algorithms.'
-  }
+    name: "SRM Dry Cleaners",
+    tools: ["Web UI", "Business Site"],
+    role: "Built a service business web presence with practical contact and conversion flows.",
+    description: "Website project tailored to a local service business brand.",
+    code: "https://github.com/silentknight-sudo/Srmdrycleaners-",
+  },
+  {
+    name: "Abhiyantri Setu Infra",
+    tools: ["Full Stack", "Infra Platform"],
+    role: "Worked on broader platform structuring and product-facing implementation.",
+    description: "Infrastructure-focused digital platform with product and workflow orientation.",
+    code: "https://github.com/silentknight-sudo/Abhiyantri-Setu-Infra",
+  },
+  {
+    name: "LuminaLedger",
+    tools: ["Fintech Concept"],
+    role: "Explored product direction and repository setup.",
+    description: "Early-stage finance or ledger-oriented project concept.",
+    code: "https://github.com/silentknight-sudo/LuminaLedger",
+  },
+  {
+    name: "Time Range Merger",
+    tools: ["Python", "Algorithms"],
+    role: "Implemented interval-merging logic from scratch.",
+    description: "Compact algorithm project focused on overlapping time-range resolution.",
+    code: "https://github.com/silentknight-sudo/time-range-merger",
+  },
+  {
+    name: "Wrap4All",
+    tools: ["Web App"],
+    role: "Set up and shaped the base repo structure.",
+    description: "Utility web project from the public GitHub archive.",
+    code: "https://github.com/silentknight-sudo/wrap4all",
+  },
 ];

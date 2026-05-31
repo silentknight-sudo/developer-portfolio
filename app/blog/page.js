@@ -4,14 +4,19 @@ import { personalData } from "@/utils/data/personal-data";
 import BlogCard from "../components/homepage/blog/blog-card";
 
 async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+  try {
+    const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`, {
+      next: { revalidate: 3600 },
+    });
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    if (!res.ok) {
+      return [];
+    }
+
+    return await res.json();
+  } catch {
+    return [];
   }
-
-  const data = await res.json();
-  return data;
 };
 
 async function page() {
@@ -29,14 +34,18 @@ async function page() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
-        {
-          blogs.map((blog, i) => (
+      {blogs.length ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 lg:gap-8 xl:gap-10">
+          {blogs.map((blog, i) => (
             blog?.cover_image &&
             <BlogCard blog={blog} key={i} />
-          ))
-        }
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="mx-auto max-w-2xl rounded-3xl border border-white/10 bg-white/5 p-8 text-center text-white/70">
+          Blog posts are unavailable right now, but the portfolio build stays healthy and the rest of the site is fully accessible.
+        </div>
+      )}
     </div>
   );
 };

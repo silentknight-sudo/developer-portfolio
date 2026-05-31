@@ -1,44 +1,35 @@
 // @flow strict
 import Link from "next/link";
 
+const navItems = [
+  { label: "ABOUT", href: "/#about" },
+  { label: "EXPERIENCE", href: "/#experience" },
+  { label: "SKILLS", href: "/#skills" },
+  { label: "EDUCATION", href: "/#education" },
+  { label: "PROJECTS", href: "/#projects" },
+  { label: "CONTACT", href: "/#contact" },
+];
 
 function Navbar() {
   return (
-    <nav className="bg-transparent">
-      <div className="flex items-center justify-between py-5">
-        <div className="flex flex-shrink-0 items-center">
-          <Link
-            href="/"
-            className=" text-[#16f2b3] text-3xl font-bold">
-            VIVEK SHUKLA
-          </Link>
-        </div>
+    <nav className="sticky top-0 z-[100] py-5">
+      <div className="glass-panel flex flex-col gap-4 rounded-2xl px-5 py-4 md:flex-row md:items-center md:justify-between">
+        <Link href="/" className="font-[var(--font-heading)] text-xl font-bold tracking-[0.28em] text-[var(--accent)] md:text-2xl">
+          VIVEK//SHUKLA
+        </Link>
 
-        <ul className="mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100" id="navbar-default">
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#about">
-              <div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">ABOUT</div>
-            </Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#experience"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EXPERIENCE</div></Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#skills"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">SKILLS</div></Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#education"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">EDUCATION</div></Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">BLOGS</div></Link>
-          </li>
-          <li>
-            <Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/#projects"><div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">PROJECTS</div></Link>
-          </li>
+        <ul className="flex flex-wrap items-center gap-2 md:gap-3">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} className="chip-link">
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
