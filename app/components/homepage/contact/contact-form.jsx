@@ -1,9 +1,8 @@
 "use client";
 // @flow strict
 import { isValidEmail } from "@/utils/check-email";
-import axios from "axios";
 import { useState } from "react";
-import { TbMailForward } from "react-icons/tb";
+import { FaPaperPlane } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 function ContactForm() {
@@ -35,10 +34,19 @@ function ContactForm() {
 
     try {
       setIsLoading(true);
-      const res = await axios.post(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/contact`,
-        userInput
-      );
+      const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userInput),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data?.message || "Failed to send message");
+      }
 
       toast.success("Message sent successfully!");
       setUserInput({
@@ -47,7 +55,7 @@ function ContactForm() {
         message: "",
       });
     } catch (error) {
-      toast.error(error?.response?.data?.message);
+      toast.error(error?.message || "Failed to send message");
     } finally {
       setIsLoading(false);
     };
@@ -117,7 +125,7 @@ function ContactForm() {
                 <span>Sending Message...</span>:
                 <span className="flex items-center gap-1">
                   Send Message
-                  <TbMailForward size={20} />
+                  <FaPaperPlane size={16} />
                 </span>
               }
             </button>
